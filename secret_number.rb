@@ -64,7 +64,7 @@ def hint(x)
 		min = 0
 	end
 	if max > MAX
-		max = x
+		max = MAX
 	end
 	puts "HINT RANGE #{min} - #{max}".blue
 end
