@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'colorize'
 MAX = 50
+ROUND = 5
 def main
 	x = Random.rand(1..MAX)
 	guess_number(x)
@@ -9,7 +10,7 @@ end
 def guess_number(x)
 	history = []
 	i = 0
-	while i < 5
+	while i < ROUND
 		print "ROUND #{i+1} input number : "
 		guess = gets.chomp
 
