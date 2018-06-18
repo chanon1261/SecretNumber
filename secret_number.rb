@@ -1,7 +1,8 @@
 require 'rubygems'
 require 'colorize'
+MAX = MAX
 def main
-	x = Random.rand(1..50)
+	x = Random.rand(1..MAX)
 	guess_number(x)
 end
 
@@ -61,7 +62,7 @@ def hint(x)
 	if min < 0
 		min = 0
 	end
-	if max > x
+	if max > MAX
 		max = x
 	end
 	puts "HINT RANGE #{min} - #{max}".blue
