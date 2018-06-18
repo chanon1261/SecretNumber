@@ -26,7 +26,7 @@ def guess_number(x)
 				history.push(guess)
 			end
 
-			if suggest(guess,x) == true
+			if suggest?(guess,x)
 				break
 			end
 		else
@@ -41,7 +41,7 @@ def guess_number(x)
 
 end
 
-def suggest(guess,x)
+def suggest?(guess,x)
 	if guess.to_i < x
 		puts "more than #{guess}"
 		return false
