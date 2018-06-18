@@ -2,7 +2,6 @@ require 'rubygems'
 require 'colorize'
 def main
 	x = Random.rand(1..50)
-	puts x
 	guess_number(x)
 end
 
