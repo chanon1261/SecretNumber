@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'colorize'
-MAX = MAX
+MAX = 50
 def main
 	x = Random.rand(1..MAX)
 	guess_number(x)
